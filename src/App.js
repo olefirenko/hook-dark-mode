@@ -1,23 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { useDarkMode } from "./hooks";
 
 function App() {
+  const [prefersDarkMode, setDarkMode] = useDarkMode();
+
   return (
-    <div className="App">
+    <div className={"App " + (prefersDarkMode ? "dark" : "light")}>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Current color mode: {prefersDarkMode ? "Dark" : "Light"}</p>
+
+        <button type="button" onClick={() => setDarkMode(!prefersDarkMode)}>
+          Set {prefersDarkMode ? "light" : "dark"} mode
+        </button>
       </header>
     </div>
   );
