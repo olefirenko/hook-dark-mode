@@ -27,7 +27,7 @@ yarn add hook-dark-mode
 Pull the hook into your component (usually the root one) and call the hook inside the functional component. Then based on the user preference you can add corresponding classes to the wrapper element.
 
 ```js
-import { useDarkMode } from "./hooks";
+import { useDarkMode } from "hook-dark-mode";
 
 function App() {
   const [prefersDarkMode, setDarkMode] = useDarkMode();
