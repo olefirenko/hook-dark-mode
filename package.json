@@ -1,6 +1,6 @@
 {
   "name": "hook-dark-mode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React custom hook to handle dark mode based on user system appearence theme and localStorage",
   "author": "olefirenko <dmitriy.olefirenko@gmail.com>",
   "main": "src/hooks/index.js",
