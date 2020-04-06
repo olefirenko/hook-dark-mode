@@ -2,6 +2,8 @@
 
 React custom hook to handle dark mode based on user system appearence theme and localStorage.
 
+[DEMO](https://hook-dark-mode.netlify.com/)
+
 ## Benefits
 
 * Gets the initial value from the user system about color scheme preference by using media query `prefers-color-scheme`
