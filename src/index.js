@@ -1,6 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import { useLocalStorage } from "./useLocalStorage";
+import { useMediaQuery } from "./useMediaQuery";
+import { useDarkMode } from "./useDarkMode";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export { useLocalStorage, useMediaQuery, useDarkMode };
